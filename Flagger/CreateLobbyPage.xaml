@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flagger.CreateLobbyPage"
+             xmlns:local="clr-namespace:Flagger.Models">
+
+    <ContentPage.BindingContext>
+        <local:CreateLobbyModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout Margin="10,0" VerticalOptions="FillAndExpand">
+            <Label Text="Lobby Name"></Label>
+            <Entry Text="{Binding LobbyName}"></Entry>
+
+            <Label Text="Lobby Password"></Label>
+            <Entry Text="{Binding LobbyPass}"></Entry>
+
+            <Label Text="Maximum Users"></Label>
+            <Entry Keyboard="Numeric" TextChanged="Entry_TextChanged" Text="{Binding MaxUsers}"></Entry>
+
+            <Label Text="Flag Count"></Label>
+            <Entry Keyboard="Numeric" TextChanged="Entry_TextChanged" Text="{Binding FlagCount}"></Entry>
+
+        </VerticalStackLayout>
+
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="10,10" Text="Cancel" Command="{Binding CancelCommand}"></Button>
+            <Button Margin="10,10" Grid.Column="1" Text="Create" Command="{Binding CreateCommand}"></Button>
+        </Grid>
+    </Grid>
+</ContentPage>

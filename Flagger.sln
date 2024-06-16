@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flagger", "Flagger\Flagger.csproj", "{F9A55C42-331A-41CA-9F5E-C76312353B6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flagger_Client", "Flagger_Client\Flagger_Client.csproj", "{F97FD5D7-37AC-4910-97F2-17D4C37690F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flagger_Server", "Flagger_Server\Flagger_Server.csproj", "{6FAC4A8E-1320-4535-9B3F-E94CCE5F454D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Flagger_Models", "Flagger_Models\Flagger_Models.shproj", "{1DB806C5-B2B2-4373-A2B3-4D5B47FAC07A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flagger_Console", "Flagger_Console\Flagger_Console.csproj", "{33E95DA5-0712-44D7-8953-D7A903F18125}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9A55C42-331A-41CA-9F5E-C76312353B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A55C42-331A-41CA-9F5E-C76312353B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A55C42-331A-41CA-9F5E-C76312353B6E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F9A55C42-331A-41CA-9F5E-C76312353B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A55C42-331A-41CA-9F5E-C76312353B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A55C42-331A-41CA-9F5E-C76312353B6E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F97FD5D7-37AC-4910-97F2-17D4C37690F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97FD5D7-37AC-4910-97F2-17D4C37690F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97FD5D7-37AC-4910-97F2-17D4C37690F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97FD5D7-37AC-4910-97F2-17D4C37690F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FAC4A8E-1320-4535-9B3F-E94CCE5F454D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FAC4A8E-1320-4535-9B3F-E94CCE5F454D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FAC4A8E-1320-4535-9B3F-E94CCE5F454D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FAC4A8E-1320-4535-9B3F-E94CCE5F454D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E95DA5-0712-44D7-8953-D7A903F18125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E95DA5-0712-44D7-8953-D7A903F18125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E95DA5-0712-44D7-8953-D7A903F18125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E95DA5-0712-44D7-8953-D7A903F18125}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B4C1572-3E7F-4F45-AA4E-02EDD89F149F}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Flagger_Models\Flagger_Models.projitems*{1db806c5-b2b2-4373-a2b3-4d5b47fac07a}*SharedItemsImports = 13
+		Flagger_Models\Flagger_Models.projitems*{6fac4a8e-1320-4535-9b3f-e94cce5f454d}*SharedItemsImports = 5
+		Flagger_Models\Flagger_Models.projitems*{f97fd5d7-37ac-4910-97f2-17d4c37690f5}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal

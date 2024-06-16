@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Flagger.LobbyPage"
+             xmlns:local="clr-namespace:Flagger.Models">
+    <ContentPage.BindingContext>
+        <local:FlagScreenModel />
+    </ContentPage.BindingContext>
+
+    <Grid Margin="0,10">
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="0">
+            <VerticalStackLayout
+           Padding="30,0"
+           Spacing="25" BindableLayout.ItemsSource="{Binding Flags}" BindableLayout.EmptyView="No Flags" VerticalOptions="FillAndExpand">
+
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Button
+                           BackgroundColor="{Binding CurrentColour}"
+                           Text="{Binding FlagModel.Number}"
+                           Command="{Binding FlagClicked}"
+                           CommandParameter="{Binding FlagModel}"
+                           HorizontalOptions="Fill" 
+                           VerticalOptions="Fill"/>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid Grid.Row="1" Padding="25,10" ColumnSpacing="25">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" Text="Exit" Command="{Binding ExitCommand}"></Button>
+            <Button Grid.Column="1" Text="Overall"></Button>
+
+            <Ellipse x:Name="IndicatorA" Grid.Column="2" HeightRequest="50" WidthRequest="50" Fill="MidnightBlue" StrokeThickness="10" Stroke="Black"></Ellipse>
+            <Ellipse x:Name="IndicatorB" Grid.Column="2" HeightRequest="30" WidthRequest="30" Fill="LightGreen" StrokeThickness="5" Stroke="Black"></Ellipse>
+        </Grid>
+    </Grid>
+</ContentPage>

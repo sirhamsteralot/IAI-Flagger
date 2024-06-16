@@ -1,0 +1,6 @@
+@Flagger.Server_HostAddress = http://localhost:80
+
+GET {{Flagger.Server_HostAddress}}/lobby/list
+Accept: application/json
+
+###

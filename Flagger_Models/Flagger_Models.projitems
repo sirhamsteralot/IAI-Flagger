@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1db806c5-b2b2-4373-a2b3-4d5b47fac07a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Flagger_Models</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CreateLobbyRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FlagModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FlagStatusResponse.cs" />
+    <Compile Include="..\Flagger_Models\FlagStatusRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LobbyLoginRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LobbyLoginResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)User.cs" />
+    <Compile Include="..\Flagger_Models\LobbySettings.cs" />
+  </ItemGroup>
+</Project>
